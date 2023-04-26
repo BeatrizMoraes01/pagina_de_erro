@@ -189,7 +189,7 @@ body.dark {
     --text-color: #fff; /* dark mode text color */
   }
   .button{
-    padding: 10px;
+    padding: 6px;
     display: flex;
     justify-content: flex-end;
   }
