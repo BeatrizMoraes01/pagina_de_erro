@@ -208,4 +208,11 @@ body.dark {
   #toggle-theme-btn:hover {
     background-color: var(--bg-color);
   }
+
+  @media screen and (max-width: 480px) {
+    .error-container{
+        font-size: 100px;
+    }
+    
+  }
   
