@@ -159,16 +159,53 @@ h1{
 
 a.more-link{
     text-transform: uppercase;
-    font-size: 13px;
-    background-color: #bbb;
+    font-size: 17px;
+    background-color: var(--bg-color);
     padding: 10px 15px;
     border-radius: 5px;
-    color: #fff;
+    color: var(--text-color);
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
     line-height: 1.5;
     text-decoration: none;
     margin-top: 50px;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
 }
+
+:root {
+    --bg-color: #fff; /* light mode background color */
+    --text-color: #333; /* light mode text color */
+  }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+
+body.dark {
+    --bg-color: #333; /* dark mode background color */
+    --text-color: #fff; /* dark mode text color */
+  }
+  .button{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #toggle-theme-btn {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+  }
+  
+  #toggle-theme-btn:hover {
+    background-color: var(--bg-color);
+  }
+  
